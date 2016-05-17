@@ -1,0 +1,74 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+class PoisonousPlants{
+	public static void main(String[] args) {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner in = new Scanner(System.in);
+    int numPlants = Integer.parseInt(in.nextLine());
+    int[] pesticideArray = new int[numPlants];
+    for(int i = 0; i<numPlants; i++){
+    	pesticideArray[i] = in.nextInt();
+    }
+    int minPest = pesticideArray[0];
+    int counterDays = 0;
+    int maxDays = 0;
+    Stack<Integer> dead = new Stack<Integer>();
+        
+    for(int i = 1; i<numPlants; i++){
+    	int curr = pesticideArray[i];
+        //System.out.println(curr);
+        if(curr > minPest){
+        	//System.out.println(curr + "Here");
+            dead.push(curr);   
+        }
+        else{
+        	//System.out.println("here!");
+        	minPest = curr;
+            if (dead.isEmpty()){
+            	continue;
+            }
+            else{
+            	//System.out.println(curr + "Here");
+                int deadMin = dead.pop();
+                counterDays ++;
+                while(!dead.isEmpty()){
+                	int deadTracker = dead.pop();
+                    //System.out.println(deadMin + " " + deadTracker);
+                    if (deadMin > deadTracker){
+                    	deadMin = deadTracker;
+                    }
+                    else{
+                        counterDays ++;
+                    }
+                }
+                if (counterDays > maxDays){
+                    maxDays = counterDays;
+                }
+                counterDays = 0;
+            }		
+        }
+    }
+    if(!dead.isEmpty()){
+    	int deadMin = dead.pop();
+        counterDays ++;
+        while(!dead.isEmpty()){
+        	int deadTracker = dead.pop();
+            //System.out.println(deadMin + " " + deadTracker);
+            if (deadMin > deadTracker){
+            	deadMin = deadTracker;
+            }
+            else{
+            	counterDays ++;
+            }
+        }
+        if (counterDays > maxDays){
+        	maxDays = counterDays;
+        }
+    }
+    System.out.println(maxDays);
+	}
+}

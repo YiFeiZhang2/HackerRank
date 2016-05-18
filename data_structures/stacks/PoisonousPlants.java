@@ -13,65 +13,32 @@ class PoisonousPlants{
     for(int i = 0; i<numPlants; i++){
     	pesticideArray[i] = in.nextInt();
     }
-    int minPest = pesticideArray[0];
-    int counterDays = 0;
-    int maxDays = 0;
-    Stack<Integer> dead = new Stack<Integer>();
-        
-    for(int i = 1; i<numPlants; i++){
-    	int curr = pesticideArray[i];
-        //System.out.println(curr);
-        if(curr > minPest){
-        	//System.out.println(curr + "Here");
-            dead.push(curr);   
-        }
-        else{
-        	//System.out.println("here!");
-        	minPest = curr;
-            if (dead.isEmpty()){
-            	continue;
-            }
-            else{
-            	//System.out.println(curr + "Here");
-                int deadMin = dead.pop();
-                counterDays ++;
-                while(!dead.isEmpty()){
-                	int deadTracker = dead.pop();
-                    //System.out.println(deadMin + " " + deadTracker);
-                    if (deadMin > deadTracker){
-                    	deadMin = deadTracker;
-                    }
-                    else{
-                        counterDays ++;
-                    }
-                }
-                if (counterDays > maxDays){
-                    maxDays = counterDays;
-                }
-                //System.out.println(counterDays);
-                counterDays = 0;
-            }		
-        }
-    }
-    if(!dead.isEmpty()){
-    	int deadMin = dead.pop();
-        counterDays ++;
-        while(!dead.isEmpty()){
-        	int deadTracker = dead.pop();
-            //System.out.println(deadMin + " " + deadTracker);
-            if (deadMin > deadTracker){
-            	deadMin = deadTracker;
-            	counterDays = 0;
-            }
-            else{
-            	counterDays ++;
-            }
-            if (counterDays > maxDays){
-            	maxDays = counterDays;
-            }
-        }
-        
-    }
-    System.out.println(maxDays);
+    int[] killerArray = getKillerArray(pesticideArray, numPlants);
+    System.out.println(Arrays.toString(killerArray));    
+    
 	}
+	
+	static int[] getKillerArray(int[] pesticideArray, int numPlants){
+        int[] killerArray = new int[numPlants];
+        killerArray[0] = -1;
+        int maxDay = 0;
+        
+        Stack<Integer>s = new Stack<Integer>();
+        s.push(0);
+        
+        for(int i = 1; i<numPlants; i++){
+            maxDay = 1;
+        	
+            while(!s.isEmpty() && pesticideArray[i]<pesticideArray[s.peek()]){
+                s.pop();
+                maxDay += 1;
+            }
+            
+            killerArray[i] = s.peek();
+            
+            s.push(i);
+        }
+        System.out.println(maxDay);
+        return killerArray;
+    }
 }

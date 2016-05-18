@@ -1,0 +1,50 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+class PoisonousPlants{
+	public static void main(String[] args) {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner in = new Scanner(System.in);
+    int numPlants = Integer.parseInt(in.nextLine());
+    int[] pesticideArray = new int[numPlants];
+    for(int i = 0; i<numPlants; i++){
+    	pesticideArray[i] = in.nextInt();
+    }
+    int[] killerArray = getTimeDeath(pesticideArray, numPlants);
+    System.out.println(Arrays.toString(killerArray));    
+    
+	}
+	
+    static int[] getTimeDeath(int[] pesticideArray, int numPlants){
+        int[] timeDeath = new int[numPlants];
+        int days = 0;
+        timeDeath[0] = -1;
+        
+        Stack <Integer>s = new Stack<Integer>();
+        s.push(0);
+        
+        for(int i = 1; i<numPlants; i++){
+            int j = i;
+            days = 0;
+            if(!s.isEmpty() && pesticideArray[i]>pesticideArray[j-1]){
+            	System.out.println("1");
+                days ++;
+            }
+            else{
+            	System.out.println("2");
+                while(pesticideArray[j] < pesticideArray[j-1]){
+                    j--;
+                    days += s.pop();
+                }
+                days ++;
+            }
+            s.push(days);
+            
+            timeDeath[i] = days;
+        }
+        return timeDeath;
+    }
+}

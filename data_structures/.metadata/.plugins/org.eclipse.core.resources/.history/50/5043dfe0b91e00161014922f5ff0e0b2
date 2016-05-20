@@ -1,0 +1,9 @@
+package stacks;
+
+public class Testing {
+	public static void main(String[] args){
+		System.out.println("hi");
+		Canine myPuppy = new SiberianHusky("Lilah", "Grey/White", 5, 'F'); 
+		myPuppy.printInfo();
+	}
+}

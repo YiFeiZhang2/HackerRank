@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ZE6nkRxwEeaRCqnOgnvEIQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_ZE6nkhxwEeaRCqnOgnvEIQ" bindingContexts="_ZE6nlBxwEeaRCqnOgnvEIQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PoisonousPlants.java&quot; tooltip=&quot;stacks/PoisonousPlants.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/PoisonousPlants.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SimpleTextEditor.java&quot; tooltip=&quot;stacks/SimpleTextEditor.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/SimpleTextEditor.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HelloWorld.java&quot; tooltip=&quot;stacks/HelloWorld.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/HelloWorld.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;poisonous_plants.java&quot; tooltip=&quot;stacks/poisonous_plants.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/poisonous_plants.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Testing.java&quot; tooltip=&quot;stacks/stacks/Testing.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/stacks/Testing.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Canine.java&quot; tooltip=&quot;stacks/stacks/Canine.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/stacks/Canine.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PoisonousPlants.java&quot; tooltip=&quot;stacks/PoisonousPlants.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/PoisonousPlants.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SimpleTextEditor.java&quot; tooltip=&quot;stacks/SimpleTextEditor.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/SimpleTextEditor.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HelloWorld.java&quot; tooltip=&quot;stacks/HelloWorld.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/HelloWorld.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;poisonous_plants.java&quot; tooltip=&quot;stacks/poisonous_plants.java&quot;>&#xA;&lt;persistable path=&quot;/stacks/poisonous_plants.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_ZE6nkhxwEeaRCqnOgnvEIQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_ZgkBwhxwEeaRCqnOgnvEIQ" label="%trimmedwindow.label.eclipseSDK" x="0" y="23" width="1398" height="768">
@@ -90,7 +90,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_eKKDGRxwEeaRCqnOgnvEIQ" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_eKI08RxwEeaRCqnOgnvEIQ"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_eKKDGhxwEeaRCqnOgnvEIQ" containerData="7500" selectedElement="_eKKDGxxwEeaRCqnOgnvEIQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_eKKDGhxwEeaRCqnOgnvEIQ" containerData="7500" selectedElement="_eKKDJBxwEeaRCqnOgnvEIQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_eKKDGxxwEeaRCqnOgnvEIQ" containerData="7500" selectedElement="_eKKDHBxwEeaRCqnOgnvEIQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_eKKDHBxwEeaRCqnOgnvEIQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_ZqQwUBxwEeaRCqnOgnvEIQ"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_eKKDHRxwEeaRCqnOgnvEIQ" containerData="2500">
@@ -148,7 +148,7 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_o2jpoByXEeaYRrf8QVW8Lw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PoisonousPlants.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PoisonousPlants.java&quot; partName=&quot;PoisonousPlants.java&quot; title=&quot;PoisonousPlants.java&quot; tooltip=&quot;stacks/PoisonousPlants.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/stacks/PoisonousPlants.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;509&quot; selectionTopPixel=&quot;20&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PoisonousPlants.java&quot; partName=&quot;PoisonousPlants.java&quot; title=&quot;PoisonousPlants.java&quot; tooltip=&quot;stacks/PoisonousPlants.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/stacks/PoisonousPlants.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;509&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -318,7 +318,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZizdcBxwEeaRCqnOgnvEIQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_f2sysByXEeaYRrf8QVW8Lw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ZFf2eRxwEeaRCqnOgnvEIQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_x5TD0B64EeaXMqCAnna14A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ZFf2eRxwEeaRCqnOgnvEIQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ZizdcRxwEeaRCqnOgnvEIQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -351,10 +351,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Zi0EgBxwEeaRCqnOgnvEIQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_f2un4hyXEeaYRrf8QVW8Lw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_ZFfPaxxwEeaRCqnOgnvEIQ"/>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_gHu4UByXEeaYRrf8QVW8Lw" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
-        <tags>Draggable</tags>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_x5U5Ah64EeaXMqCAnna14A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_ZFfPaxxwEeaRCqnOgnvEIQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Zi0EgRxwEeaRCqnOgnvEIQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -979,7 +976,7 @@
     <bindings xmi:id="_ZGbqgxxwEeaRCqnOgnvEIQ" keySequence="ALT+COMMAND+X O" command="_ZFeBThxwEeaRCqnOgnvEIQ">
       <tags>platform:cocoa</tags>
     </bindings>
-    <bindings xmi:id="_fm7RUByXEeaYRrf8QVW8Lw" keySequence="COMMAND+CTRL+F" command="_ZGk0cxxwEeaRCqnOgnvEIQ"/>
+    <bindings xmi:id="_xlA14R64EeaXMqCAnna14A" keySequence="COMMAND+CTRL+F" command="_ZGk0cxxwEeaRCqnOgnvEIQ"/>
   </bindingTables>
   <bindingTables xmi:id="_ZGFsRRxwEeaRCqnOgnvEIQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" bindingContext="_ZFkH8xxwEeaRCqnOgnvEIQ">
     <bindings xmi:id="_ZGFsRhxwEeaRCqnOgnvEIQ" keySequence="ALT+SHIFT+ARROW_DOWN" command="_ZFcMBRxwEeaRCqnOgnvEIQ"/>
@@ -1202,7 +1199,7 @@
     <bindings xmi:id="_ZGVj6RxwEeaRCqnOgnvEIQ" keySequence="F1" command="_ZFX6qhxwEeaRCqnOgnvEIQ"/>
   </bindingTables>
   <bindingTables xmi:id="_ZGlbhhxwEeaRCqnOgnvEIQ" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_ZE6nlxxwEeaRCqnOgnvEIQ">
-    <bindings xmi:id="_fm7RURyXEeaYRrf8QVW8Lw" keySequence="M1+W" command="_ZGlbhBxwEeaRCqnOgnvEIQ"/>
+    <bindings xmi:id="_xlBc8B64EeaXMqCAnna14A" keySequence="M1+W" command="_ZGlbhBxwEeaRCqnOgnvEIQ"/>
   </bindingTables>
   <bindingTables xmi:id="_ZqSlgRxwEeaRCqnOgnvEIQ" bindingContext="_ZqSlgBxwEeaRCqnOgnvEIQ"/>
   <bindingTables xmi:id="_ZqTMkRxwEeaRCqnOgnvEIQ" bindingContext="_ZqTMkBxwEeaRCqnOgnvEIQ"/>

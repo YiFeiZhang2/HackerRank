@@ -1,0 +1,9 @@
+#!/usr/local/bin/python3
+
+from itertools import permutations
+
+iterable, length = input().split(" ")
+iterable = sorted(iterable)
+
+for i in list(permutations(iterable, int(length))):
+	print(''.join(i))

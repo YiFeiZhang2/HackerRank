@@ -1,0 +1,14 @@
+#!/usr/local/bin/python3
+
+from itertools import combinations
+
+line, length = input().split(" ")
+
+length = int(length)
+line = sorted(line)
+
+for i in range(length):
+	for j in list(combinations(line, i+1)):
+		print(''.join(j))
+
+

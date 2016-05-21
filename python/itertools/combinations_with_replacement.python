@@ -1,0 +1,8 @@
+#!usr/local/bin/python3
+
+from itertools import combinations_with_replacement
+
+line, length = input().strip().split(" ")
+
+for j in list(combinations_with_replacement(sorted(line), int(length))):
+	print(''.join(j))

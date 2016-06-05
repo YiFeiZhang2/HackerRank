@@ -1,0 +1,7 @@
+import re
+
+numRows, numColumns = map(int, input().strip().split(" "))
+matrix = [list(input()) for _ in range(numRows)]
+line = ''.join([''.join(x) for x in list(zip(*matrix))]) 
+decode = re.sub(r'(?<=[a-zA-Z0-9])[^a-zA-Z0-9]+(?=[a-zA-Z0-9])', " ", line)
+print(decode)

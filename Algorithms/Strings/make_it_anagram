@@ -1,0 +1,16 @@
+#find min number of deletions in two strings to make them anagrams of each other
+#used defaultdict to store number of occurences of characters in strings
+#+1 for first string, -1 for second
+#in the end, the value for each character key represents the difference
+#sum of the absolute of the difference of each key is the total number of characters that need to be changed
+
+from collections import defaultdict
+combined = defaultdict(int)
+total = 0
+for x in input():
+    combined[x] += 1
+for x in input():
+    combined[x] -= 1
+for chars in combined.keys():
+    total += abs(combined[chars])
+print (total)

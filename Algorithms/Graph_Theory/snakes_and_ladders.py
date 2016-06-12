@@ -1,23 +1,30 @@
 from collections import defaultdict
+from collections import deque
 
 class Graph:
     def __init__ (self):
         self.vertices = defaultdict(set)
     
     def addVertex(self, vertex):
-        self.vertices[vertex.value] = set()
+        self.vertices[vertex] = set()
     
-    def addEdge(self, start, end):
-        self.vertices[start.value].add(end.value)
+    def addEdge(self, start_vertex, end_vertex):
+        self.vertices[start_vertex].add(end_vertex)
         
-    def shortestPath(self, start, end):
-        for value in self.vertices[start]:
-            print(value)
+    def shortestPath(self, start_vertex):
+        queue = deque()
+        steps = [-1]*101
+        steps[1] = 0
+        queue.append(start_vertex)
         
-class Vertex:
-    def __init__(self, value):
-        self.value = value
-        self.seen = False
+        while len(queue) != 0:
+            currVert = queue.popleft()
+            for vert in self.vertices[currVert]:
+                if steps[vert] == -1:
+                    queue.append(vert)
+                    steps[vert] = steps[currVert] +1
+                    
+        print(steps[100])
 
 for _ in range(int(input())):
     numladders = int(input())
@@ -26,14 +33,14 @@ for _ in range(int(input())):
     snakes = dict([tuple(map(int, input().strip().split(" "))) for x in range(numsnakes)])
     graph = Graph()
     for i in range(1, 100):
-        graph.addVertex(Vertex(i))
+        graph.addVertex(i)
         for j in range(i+1, i+7):
             if j <= 100:
                 if j in ladders.keys():
-                    graph.addEdge(Vertex(i), Vertex(ladders[j]))
+                    graph.addEdge(i, ladders[j])
                 elif j in snakes.keys():
-                    graph.addEdge(Vertex(i), Vertex(snakes[j]))
+                    graph.addEdge(i, snakes[j])
                 else:
-                    graph.addEdge(Vertex(i), Vertex(j))
-                
-    graph.shortestPath(1, 100)
+                    graph.addEdge(i, j)
+                    
+    graph.shortestPath(1)

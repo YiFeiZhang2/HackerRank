@@ -7,9 +7,9 @@ using namespace std;
 class Node {
 private:
     Node* next = NULL;
-public:
     int x;
     int y;
+public:
     Node (int x, int y) : x (x), y (y), next (NULL) { };
     Node () { };
     Node* getNext(){
